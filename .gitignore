@@ -1,6 +1,7 @@
 Temp/*
 Library/*
 *.swp
+*.userprefs
 
 obj/*
 ExportedObj/*
