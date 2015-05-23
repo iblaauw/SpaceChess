@@ -7,9 +7,11 @@ public class functions : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-				Instantiate(cube, new Vector3(i, j, 0), Quaternion.identity);
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				for (int k = 0; k < 8; k++){
+					Instantiate(cube, new Vector3(i, j, k), Quaternion.identity);
+				}
 			}
 		}
 	}
