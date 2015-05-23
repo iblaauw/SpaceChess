@@ -4,7 +4,8 @@ using System.Collections;
 public class functions : MonoBehaviour {
 
 	public Transform cube;
-
+	// Errors? What errors?
+	// This is going to be a fun project.
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < 8; i++) {
