@@ -3,6 +3,7 @@ Library/*
 *.swp
 *.userprefs
 *.csproj
+*.sln
 
 obj/*
 ExportedObj/*
