@@ -54,12 +54,8 @@ public class functions : MonoBehaviour {
 
 		// Make queen sphere
 		Instantiate (queen_sphere,
-		             new Vector3 (8, 4, 1),
-		             Quaternion.identity);
-
-
-
-						           
+		             new Vector3 (3f, 7f, 0f),
+		             Quaternion.identity);	           
 
 
 
@@ -67,7 +63,12 @@ public class functions : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	//void Update () {
-	
-	//}
+	void Update () {
+		if (Input.GetKeyDown ("q")) {
+			print ("Making progress!");
+		} 
+		else if (Input.GetKeyDown ("k")) {
+			print ("Unser König!");
+		}
+	}
 }

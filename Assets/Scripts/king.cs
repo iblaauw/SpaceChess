@@ -12,11 +12,14 @@ public class king : MonoBehaviour {
 
 		// Placing king in top middle of cube,
 		// at least for now.
-		Instantiate (king_piece, new Vector3 (5, 8, 1),
+		Instantiate (king_piece, new Vector3 (4f, 7f, 0f),
 		             Quaternion.identity);
 	}
 
 	void Update() {
+		if (Input.GetKeyDown ("k")) {
+			print("Kug Unson!");
+		}
 
 	}
 }
