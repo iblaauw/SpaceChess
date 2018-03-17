@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+/*
 public class functions : MonoBehaviour {
 
 	public Transform cube;
@@ -9,7 +10,12 @@ public class functions : MonoBehaviour {
 
 	public Object[] cube_arr = new Object[512];
 	public Object[] grid_arr = new Object[243];
-	
+
+
+
+
+
+
 	void Start () {
 		// Make cubes
 		int cube_arr_num = 0;
@@ -72,3 +78,20 @@ public class functions : MonoBehaviour {
 		}
 	}
 }
+*/
+
+
+// Copied from the web
+public class Instantiation : MonoBehaviour {
+
+	void Start() {
+		for (int y = 0; y < 5; y++) {
+			for (int x = 0; x < 5; x++) {
+				GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+				cube.AddComponent<Rigidbody>();
+				cube.transform.position = new Vector3(x, y, 0);
+			}
+		}
+	}
+}
+//
